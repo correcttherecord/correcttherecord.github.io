@@ -1,31 +1,40 @@
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     #header {
       width: 100%;
-      height: 250px;
-      font-size: 32px;
+      height: 125px;
+      font-size: 1.5em;
       text-align: center;
-      padding: 10px;
+      padding-top: 25px;
     }
     #video {
       width: 100%;
     }
-    
+
     video {
      margin-left: auto;
      margin-right: auto;
       display: block;
     }
+
+    .emph {
+      color: rgb(230, 81, 25);
+      display: inline-block;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <div id="header">
-    Hello, I am Julian Von Abele. I am a student at Columbia University. I am also a racist.
+    Hello, I am Julian Von Abele. <br>
+    I am a student at Columbia University. <br>
+    I am also a <div class="emph">racist</div>.
   </div>
-  
-  <div id="video>
-    <video autoplay>
+
+  <div id="video">
+    <video controls autoplay>
        <source src="video.mp4" type="video/mp4">
     </video>
- </div>
+  </div>
 </body>
